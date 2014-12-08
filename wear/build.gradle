@@ -65,4 +65,4 @@ dependencies {
     compile 'com.jakewharton.timber:timber:2.4.+'
 }
 
-apply from: 'https://raw.github.com/twotoasters/HelloAndroidStudio/master/gradle/keystore.gradle'
+apply from: 'keystore.gradle'
