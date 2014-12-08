@@ -21,7 +21,6 @@ import timber.log.Timber;
 public class Watchface extends FrameLayout implements IWatchface {
 
     @InjectView(R.id.face)              ImageView face;
-    @InjectView(R.id.shadow_overlay)    ImageView shadowOverlay;
     @InjectView(R.id.hand_hour)         ImageView handHour;
     @InjectView(R.id.hand_minute)       ImageView handMinute;
     @InjectView(R.id.hand_second)       ImageView handSecond;
@@ -111,7 +110,6 @@ public class Watchface extends FrameLayout implements IWatchface {
     private void setImageResources() {
         if (mInflated) {
             face.setImageResource(mActive ? R.drawable.watch_bg_normal : R.drawable.watch_bg_dimmed);
-            shadowOverlay.setImageResource(mActive ? R.drawable.overlay_shadow_normal : R.drawable.overlay_shadow_dimmed);
             handHour.setImageResource(mActive ? R.drawable.hand_hour_normal : R.drawable.hand_hour_dimmed);
             handMinute.setImageResource(mActive ? R.drawable.hand_minute_normal : R.drawable.hand_minute_dimmed);
             handSecond.setImageResource(mActive ? R.drawable.hand_second_normal : R.drawable.hand_second_dimmed);

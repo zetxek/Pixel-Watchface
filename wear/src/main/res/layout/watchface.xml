@@ -11,10 +11,6 @@
         android:id="@+id/face"
         android:src="@drawable/watch_bg_normal"/>
 
-    <ImageView style="@style/GearsWatchLayer"
-        android:id="@+id/shadow_overlay"
-        android:src="@drawable/overlay_shadow_normal"/>
-
     <ImageView style="@style/GearsWatchLayer.Hand"
         android:id="@+id/hand_hour"
         android:src="@drawable/hand_hour_normal"/>
